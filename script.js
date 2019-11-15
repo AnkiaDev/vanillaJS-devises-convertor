@@ -1,4 +1,4 @@
-import { eur, usd, fch, yen } from "./module/tauxChange.js"; // EDIT tauxChange.js TO ADD NEW DEVISE AND IMPORT HERE /!\
+import { eur, usd, fch, yen, czk } from "./module/tauxChange.js"; // EDIT tauxChange.js TO ADD NEW DEVISE AND IMPORT HERE /!\
 
 const formElt = document.getElementsByTagName("form");
 const inputOne = document.getElementById("inputOne");
@@ -18,6 +18,8 @@ const deviseChoice = choice => {
     return fch;
   } else if (choice === "YEN") {
     return yen;
+  } else if (choice === "CZK") {
+    return czk;
   } // ADD NEW DEVISE HERE /!\
 };
 
@@ -31,6 +33,8 @@ const deviseName = choice => {
     return "Francs-Suisse";
   } else if (choice === "YEN") {
     return "Yens";
+  } else if (choice === "CZK") {
+    return "Couronnes-Tchèque";
   } // ADD NEW DEVISE HERE /!\
 };
 
