@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Devise Convert</title>
+  </head>
+  <body>
+    <h2>Devises Convertor</h2>
+    <form>
+      <label for="inputOne"
+        >Montant en <span id="deviseNameOne"></span>: <br />
+        <input id="inputOne" name="inputOne" type="number" placeholder="EUR" />
+      </label>
+      <select name="deviseOne" id="deviseOne">
+        <option value="EUR" selected>Euros</option>
+        <option value="FCH">Francs Suisse</option>
+        <option value="USD">Dollars</option>
+        <option value="YEN">Yen</option>
+      </select>
+      <br />
+      <label for="inputTwo"
+        >Montant en <span id="deviseNameTwo"></span> : <br />
+        <input id="inputTwo" name="inputTwo" type="number" placeholder="FCH" />
+      </label>
+      <select name="deviseTwo" id="deviseTwo">
+        <option value="EUR">Euros</option>
+        <option value="FCH">Francs Suisse</option>
+        <option value="USD" selected>Dollars</option>
+        <option value="YEN">Yen</option>
+      </select>
+    </form>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="module/tauxChange.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    margin-left: 1rem;
+}
+
+label {
+    margin-left: 1rem;
+}
+
+input {
+    margin: .5rem 0rem 2rem 1rem;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+
+}
+
+select {
+    margin: .5rem 0rem 2rem 1rem;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+
+}
